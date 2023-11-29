@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:: Tailwind Css ::</title>
+    <title>:: TailwindCss ::</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
 </head>
 <body>
+
+    <div class="bg-yellow-100 border-l-4 border-yellow-500 p-3 text-yellow-700">
+        Você não tem mais acesso.
+        <a href="#" class="underline ml-1"> Faça o upgrade agora!</a>
+    </div>
+
+    <div class="w-screen h-screen p-5 bg-black">
+        <div class="w-96 rounded-md border-gray-500 bg-white p-4">
+            <div>
+                <div class="inline-block">
+                    <img class="w-14 h-14 rounded-full" src="https://tailwindui.com/img/avatar-3.jpg" alt="Imagem 1">
+                </div>
+                <div class="inline-block ml-5">
+                    <div class="text-black pb-2">Tayse Rosa</div>
+                    <div class="text-gray-500">Te mandou um convite!</div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <button class="rounded-md px-5 py-2 border border-gray-200 text-black">Negar</button>
+                <button class="ml-3 rounded-md px-5 py-2 bg-blue-800 text-white">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+
     <h2> Cores e backgrounds </h2>
     <div class="bg-indigo-500/30 text-red-300 border-black border-2 border-l-orange-500">
         Olá mundo!
@@ -28,13 +43,34 @@
 
     <div class="bg-blue-600 w-36 h-36">1</div>
     <!--Metade do tamanho disponivel da tela-->
-    <div class="bg-blue-600 w-1/2 h-36">2</div>
+    <div class="bg-blue-600 w-1/2 h-36">2
+        <br>
+        <input class="w-80 outline-green-500" />
+    </div>
     <div class="bg-blue-600 w-full h-36">3</div>
     <!--<div class="bg-blue-600 h-screen">4</div>-->
 
     <h2>Margin e padding</h2>
     <div class="bg-orange-600 w-36 h-36 p-2 m-3 mt-4">1</div>
-    <div class="bg-orange-600 w-36 h-36 my-12">2</div>
+    <div class="bg-orange-600 w-36 h-36 my-12 text-right">2
+    </div>
 
+    <h2>Manipulacao do texto</h2>
+    <!--truncate-->
+    <div class="uppercase bg-red-700 w-20 line-clamp-3"> Algum texto qualquer Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti deserunt nam nulla assumenda consequatur illo maxime sequi nemo asperiores temporibus molestias inventore labore accusantium consectetur, sunt totam ipsum eligendi! </div>
+
+    <h2>Bordas</h2>
+    <div class="w-80 h-80 bg-gray-800 rounded-full border-red-500 border-4 ">
+        
+    </div>
+
+    <h2>Botão</h2>
+    <div class="w-40 h-40 bg-green-500">
+        <div class="inline-block cursor-pointer bg-blue-400 text-white rounded-md px-5 py-2 border-none">
+            Clique aqui
+        </div>
+
+        <div class="inline-block cursor-pointer px-5 py-2 rounded-md border-blue-500 text-white"> Clique aquiiii </div>
+    </div>
 </body>
 </html>
