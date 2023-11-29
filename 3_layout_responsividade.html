@@ -9,10 +9,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="container mx-auto bg-red-500">
-        <div class="bg-blue-300 sm:bg-gray-500 md:bg-orange-500 lg:bg-green-500 xl:bg-pink-500">
+    <div class="container mx-auto">
+        <h1>Flexbox</h1>
+        <div class="bg-gray-800 text-white px-4 py-4 flex justify-between gap-3">
+            <div class="rounded-md bg-blue-500 text-white p-4 flex-1">01</div>
+            <div class="rounded-md bg-green-500 text-white p-4 flex-1">02</div>
+            <div class="rounded-md bg-blue-500 text-white p-4">03</div>
+            <div class="rounded-md bg-blue-500 text-white p-4">04</div>
+        </div>
+
+        <h1 class="pt-4">Grid</h1>
+        <div class="bg-orange-300 text-white grid grid-cols-3 gap-3">
+            <div class="rounded-md bg-blue-500 text-white p-4 flex-1">01</div>
+            <div class="rounded-md bg-blue-500 text-white p-4 flex-1">02</div>
+            <div class="rounded-md bg-blue-500 text-white p-4 flex-1">03</div>
+            <div class="rounded-md bg-blue-500 text-white p-4 flex-1">04</div>
+            <div class="rounded-md bg-blue-500 text-white p-4 flex-1">05</div>
+            <div class="rounded-md bg-blue-500 text-white p-4 flex-1">06</div>
+            <div class="rounded-md bg-blue-500 text-white p-4 flex-1">07</div>
+            <div class="rounded-md bg-blue-500 text-white p-4 flex-1">08</div>
+            <div class="rounded-md bg-blue-500 text-white p-4 flex-1">09</div>
+        </div>
+
+        <div class="mt-8 bg-blue-300 sm:bg-gray-500 md:bg-orange-500 md:text-white lg:text-blue-500 lg:bg-green-500 xl:bg-pink-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, error amet. Voluptas ipsam consequatur maxime saepe repudiandae quia dolorum, magnam maiores similique aliquid repellat numquam earum delectus hic corporis non!
         </div>
+
         <!--
         CONTAINER:
         NONE = width: 100%
